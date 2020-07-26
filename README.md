@@ -17,3 +17,11 @@ Check Makefile then:
 make
 ```
 
+## USB Access
+
+In order to access USB devices you may need to installed the udev rules:
+```
+sudo cp 80-rgb.rules /etc/udev/rules.d
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
