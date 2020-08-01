@@ -1,2 +1,4 @@
+# hidraw
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", TAG+="uaccess"
 # AMD Wraith Prism
 SUBSYSTEMS=="usb", ATTR{idVendor}=="2516", ATTR{idProduct}=="0051", TAG+="uaccess"
